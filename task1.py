@@ -4,5 +4,8 @@ def facto_recursive(n):
     return n * facto_recursive(n-1)
 
 num = int(input("Enter a number: "))
-result = facto_recursive(num)
-print(f"Factorial of {num} is {result}")
+if num >= 0:
+    result = facto_recursive(num)
+    print(f"Factorial of {num} is {result}")
+else:
+    print("Error: Factorial is not defined for negative numbers.")
